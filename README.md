@@ -2,4 +2,6 @@
 Users API for login app 
 
 server.js initialize oluyor.
-nom
+
+entry point : serve.js
+node server.js
