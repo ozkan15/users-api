@@ -10,7 +10,7 @@ const formData = multer();
 
 
 mongoose.connect('mongodb://akif:785612@users-shard-00-00-t1v6g.mongodb.net:27017,users-shard-00-01-t1v6g.mongodb.net:27017,users-shard-00-02-t1v6g.mongodb.net:27017/test?ssl=true&replicaSet=users-shard-0&authSource=admin&retryWrites=true',
-  { useNewUrlParser: true }).then(() => console.log('Connected!!')).catch(err => console.log(err));
+  { useNewUrlParser: true }).then(() => console.log('Connected to the Server!!')).catch(err => console.log(err));
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -45,4 +45,3 @@ app.use('/', (req, res) => {
 });
 
 module.exports = app;
-
